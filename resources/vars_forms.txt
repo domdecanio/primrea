@@ -1,0 +1,57 @@
+
+
+MHKDR
+
+title
+description
+Organization
+Contact
+Authors
+Data from
+Last Updated
+Submitted
+# subscribes
+# stars
+Link to license
+Keywords
+
+Resources
+Name
+description
+download link
+# downloads
+
+DOE Project Details
+Project Name
+Project Lead
+Project Number
+
+Citations
+
+
+
+Tethys
+
+Type
+Title
+Abstract
+Authors
+Publication date
+Journal
+Volume
+Issue
+Pages
+Publisher
+Affiliation
+Technology - like a tag for the type of energy harnessing
+Tags (stressors/receptors)
+location
+External link
+DOI
+citation
+Attachment
+content selection - Marine energy vs wind
+country
+coordinates
+
+
