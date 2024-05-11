@@ -1,6 +1,6 @@
-<mxfile host="Electron" modified="2024-05-10T22:24:04.820Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/24.2.5 Chrome/120.0.6099.109 Electron/28.1.0 Safari/537.36" etag="GdmiIZG6mU7GIatgaH-m" version="24.2.5" type="device">
+<mxfile host="Electron" modified="2024-05-10T23:57:29.795Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/24.2.5 Chrome/120.0.6099.109 Electron/28.1.0 Safari/537.36" etag="mROV11eqb812fKbLOPw3" version="24.2.5" type="device">
   <diagram name="PRIMRE Combined Database" id="6d6qnCAirxlTySkx6DDX">
-    <mxGraphModel dx="875" dy="524" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="1050" dy="629" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="XLJOTzD1S34jmGUU4nhe-0" />
         <mxCell id="XLJOTzD1S34jmGUU4nhe-1" parent="XLJOTzD1S34jmGUU4nhe-0" />
@@ -154,71 +154,74 @@
         <mxCell id="XLJOTzD1S34jmGUU4nhe-55" value="contains" style="shape=rhombus;perimeter=rhombusPerimeter;whiteSpace=wrap;html=1;align=center;fillColor=#fff2cc;strokeColor=#d6b656;" parent="XLJOTzD1S34jmGUU4nhe-1" vertex="1">
           <mxGeometry x="120" y="245" width="100" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="6KRJ287aKEshhGryGnyS-0" value="The trouble with combining the tables for tethys and tethys engineering (and MHKDR,&amp;nbsp;&lt;div&gt;for that matter) lies in the author names. The entities from T to TE are not shared.&amp;nbsp;&lt;/div&gt;&lt;div&gt;We also cannot assume that Smith, J. in both is the same person. This connundrum is compounded by&amp;nbsp;&lt;/div&gt;&lt;div&gt;MHKDR using a different convention for author names altogether.&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontFamily=Helvetica;fontSize=12;fontColor=default;" vertex="1" parent="XLJOTzD1S34jmGUU4nhe-1">
+        <mxCell id="6KRJ287aKEshhGryGnyS-0" value="The trouble with combining the tables for tethys and tethys engineering (and MHKDR,&amp;nbsp;&lt;div&gt;for that matter) lies in the author names. The entities from T to TE are not shared.&amp;nbsp;&lt;/div&gt;&lt;div&gt;We also cannot assume that Smith, J. in both is the same person. This connundrum is compounded by&amp;nbsp;&lt;/div&gt;&lt;div&gt;MHKDR using a different convention for author names altogether.&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontFamily=Helvetica;fontSize=12;fontColor=default;" parent="XLJOTzD1S34jmGUU4nhe-1" vertex="1">
           <mxGeometry x="1260" y="380" width="570" height="90" as="geometry" />
         </mxCell>
-        <mxCell id="6KRJ287aKEshhGryGnyS-1" value="also, using the tags construction to link between projects database fields&lt;div&gt;and the tags on tethys, te, and MHKDR will be challenging.&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontFamily=Helvetica;fontSize=12;fontColor=default;" vertex="1" parent="XLJOTzD1S34jmGUU4nhe-1">
+        <mxCell id="6KRJ287aKEshhGryGnyS-1" value="also, using the tags construction to link between projects database fields&lt;div&gt;and the tags on tethys, te, and MHKDR will be challenging.&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontFamily=Helvetica;fontSize=12;fontColor=default;" parent="XLJOTzD1S34jmGUU4nhe-1" vertex="1">
           <mxGeometry x="1270" y="470" width="410" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="6KRJ287aKEshhGryGnyS-2" value="Might be best if I try to decompose the entities&amp;nbsp;&lt;div&gt;&quot;organizations&quot; &quot;projects,&quot; &quot;devices,&quot; &quot;test sites,&quot; based on&lt;/div&gt;&lt;div&gt;the fields that they contain rather than their semantics.&lt;/div&gt;&lt;div&gt;That would give me a huge amount of freedom in&lt;/div&gt;&lt;div&gt;how I represent them, possibly enabling a tabular&amp;nbsp;&lt;/div&gt;&lt;div&gt;connection among the KHs.&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontFamily=Helvetica;fontSize=12;fontColor=default;" vertex="1" parent="XLJOTzD1S34jmGUU4nhe-1">
+        <mxCell id="6KRJ287aKEshhGryGnyS-2" value="Might be best if I try to decompose the entities&amp;nbsp;&lt;div&gt;&quot;organizations&quot; &quot;projects,&quot; &quot;devices,&quot; &quot;test sites,&quot; based on&lt;/div&gt;&lt;div&gt;the fields that they contain rather than their semantics.&lt;/div&gt;&lt;div&gt;That would give me a huge amount of freedom in&lt;/div&gt;&lt;div&gt;how I represent them, possibly enabling a tabular&amp;nbsp;&lt;/div&gt;&lt;div&gt;connection among the KHs.&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontFamily=Helvetica;fontSize=12;fontColor=default;" parent="XLJOTzD1S34jmGUU4nhe-1" vertex="1">
           <mxGeometry x="1270" y="540" width="330" height="100" as="geometry" />
         </mxCell>
-        <mxCell id="6KRJ287aKEshhGryGnyS-3" value="to my extreme surprise, reducing the resolution of the &quot;authors&quot;&lt;div&gt;field actually works!&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="XLJOTzD1S34jmGUU4nhe-1">
+        <mxCell id="6KRJ287aKEshhGryGnyS-3" value="to my extreme surprise, reducing the resolution of the &quot;authors&quot;&lt;div&gt;field actually works!&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="XLJOTzD1S34jmGUU4nhe-1" vertex="1">
           <mxGeometry x="1280" y="670" width="360" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="6KRJ287aKEshhGryGnyS-4" value="https://mhkdr.openei.org/submissions/250&lt;div&gt;https://tethys-engineering.pnnl.gov/author/boerner-t&lt;br&gt;&lt;/div&gt;&lt;div&gt;https://tethys.pnnl.gov/author/boerner-t&lt;br&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="XLJOTzD1S34jmGUU4nhe-1">
+        <mxCell id="6KRJ287aKEshhGryGnyS-4" value="https://mhkdr.openei.org/submissions/250&lt;div&gt;https://tethys-engineering.pnnl.gov/author/boerner-t&lt;br&gt;&lt;/div&gt;&lt;div&gt;https://tethys.pnnl.gov/author/boerner-t&lt;br&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="XLJOTzD1S34jmGUU4nhe-1" vertex="1">
           <mxGeometry x="1280" y="710" width="300" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="vz4CJ1ccR9rXMkQp4_nw-3" value="signatureProject" style="ellipse;whiteSpace=wrap;html=1;align=center;strokeColor=#82b366;verticalAlign=middle;fontFamily=Helvetica;fontSize=12;fillColor=#d5e8d4;" vertex="1" parent="XLJOTzD1S34jmGUU4nhe-1">
+        <mxCell id="vz4CJ1ccR9rXMkQp4_nw-3" value="signatureProject" style="ellipse;whiteSpace=wrap;html=1;align=center;strokeColor=#82b366;verticalAlign=middle;fontFamily=Helvetica;fontSize=12;fillColor=#d5e8d4;" parent="XLJOTzD1S34jmGUU4nhe-1" vertex="1">
           <mxGeometry x="540" y="70" width="60" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="vz4CJ1ccR9rXMkQp4_nw-5" value="URI" style="ellipse;whiteSpace=wrap;html=1;align=center;strokeColor=#82b366;verticalAlign=middle;fontFamily=Helvetica;fontSize=12;fillColor=#d5e8d4;" vertex="1" parent="XLJOTzD1S34jmGUU4nhe-1">
+        <mxCell id="vz4CJ1ccR9rXMkQp4_nw-5" value="URI" style="ellipse;whiteSpace=wrap;html=1;align=center;strokeColor=#82b366;verticalAlign=middle;fontFamily=Helvetica;fontSize=12;fillColor=#d5e8d4;" parent="XLJOTzD1S34jmGUU4nhe-1" vertex="1">
           <mxGeometry x="300" y="20" width="60" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="vz4CJ1ccR9rXMkQp4_nw-6" value="landingPage" style="ellipse;whiteSpace=wrap;html=1;align=center;strokeColor=#82b366;verticalAlign=middle;fontFamily=Helvetica;fontSize=12;fillColor=#d5e8d4;" vertex="1" parent="XLJOTzD1S34jmGUU4nhe-1">
+        <mxCell id="vz4CJ1ccR9rXMkQp4_nw-6" value="landingPage" style="ellipse;whiteSpace=wrap;html=1;align=center;strokeColor=#82b366;verticalAlign=middle;fontFamily=Helvetica;fontSize=12;fillColor=#d5e8d4;" parent="XLJOTzD1S34jmGUU4nhe-1" vertex="1">
           <mxGeometry x="380" y="20" width="60" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="vz4CJ1ccR9rXMkQp4_nw-7" value="sourceURL" style="ellipse;whiteSpace=wrap;html=1;align=center;strokeColor=#82b366;verticalAlign=middle;fontFamily=Helvetica;fontSize=12;fillColor=#d5e8d4;" vertex="1" parent="XLJOTzD1S34jmGUU4nhe-1">
+        <mxCell id="vz4CJ1ccR9rXMkQp4_nw-7" value="sourceURL" style="ellipse;whiteSpace=wrap;html=1;align=center;strokeColor=#82b366;verticalAlign=middle;fontFamily=Helvetica;fontSize=12;fillColor=#d5e8d4;" parent="XLJOTzD1S34jmGUU4nhe-1" vertex="1">
           <mxGeometry x="460" y="20" width="60" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="vz4CJ1ccR9rXMkQp4_nw-8" value="title" style="ellipse;whiteSpace=wrap;html=1;align=center;strokeColor=#82b366;verticalAlign=middle;fontFamily=Helvetica;fontSize=12;fillColor=#d5e8d4;" vertex="1" parent="XLJOTzD1S34jmGUU4nhe-1">
+        <mxCell id="vz4CJ1ccR9rXMkQp4_nw-8" value="title" style="ellipse;whiteSpace=wrap;html=1;align=center;strokeColor=#82b366;verticalAlign=middle;fontFamily=Helvetica;fontSize=12;fillColor=#d5e8d4;" parent="XLJOTzD1S34jmGUU4nhe-1" vertex="1">
           <mxGeometry x="540" y="20" width="60" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="vz4CJ1ccR9rXMkQp4_nw-9" value="description" style="ellipse;whiteSpace=wrap;html=1;align=center;strokeColor=#82b366;verticalAlign=middle;fontFamily=Helvetica;fontSize=12;fillColor=#d5e8d4;" vertex="1" parent="XLJOTzD1S34jmGUU4nhe-1">
+        <mxCell id="vz4CJ1ccR9rXMkQp4_nw-9" value="description" style="ellipse;whiteSpace=wrap;html=1;align=center;strokeColor=#82b366;verticalAlign=middle;fontFamily=Helvetica;fontSize=12;fillColor=#d5e8d4;" parent="XLJOTzD1S34jmGUU4nhe-1" vertex="1">
           <mxGeometry x="150" y="430" width="60" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="vz4CJ1ccR9rXMkQp4_nw-10" value="name" style="ellipse;whiteSpace=wrap;html=1;align=center;strokeColor=#82b366;verticalAlign=middle;fontFamily=Helvetica;fontSize=12;fillColor=#d5e8d4;" vertex="1" parent="XLJOTzD1S34jmGUU4nhe-1">
+        <mxCell id="vz4CJ1ccR9rXMkQp4_nw-10" value="name" style="ellipse;whiteSpace=wrap;html=1;align=center;strokeColor=#82b366;verticalAlign=middle;fontFamily=Helvetica;fontSize=12;fillColor=#d5e8d4;" parent="XLJOTzD1S34jmGUU4nhe-1" vertex="1">
           <mxGeometry x="80" y="430" width="60" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="vz4CJ1ccR9rXMkQp4_nw-11" value="difference of grain. MHKDR &quot;etry&quot; describes a colleciton of resources (attachments)&amp;nbsp;&lt;div&gt;vs tethys /tethys_e where each entry describes 1 resource (attachment)&amp;nbsp;&lt;/div&gt;&lt;div&gt;Actually this is not really true, many times tethys is used by this MHKDR definition.&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="XLJOTzD1S34jmGUU4nhe-1">
+        <mxCell id="vz4CJ1ccR9rXMkQp4_nw-11" value="difference of grain. MHKDR &quot;etry&quot; describes a colleciton of resources (attachments)&amp;nbsp;&lt;div&gt;vs tethys /tethys_e where each entry describes 1 resource (attachment)&amp;nbsp;&lt;/div&gt;&lt;div&gt;Actually this is not really true, many times tethys is used by this MHKDR definition.&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="XLJOTzD1S34jmGUU4nhe-1" vertex="1">
           <mxGeometry x="880" y="60" width="470" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="vz4CJ1ccR9rXMkQp4_nw-12" value="link" style="ellipse;whiteSpace=wrap;html=1;align=center;strokeColor=#82b366;verticalAlign=middle;fontFamily=Helvetica;fontSize=12;fillColor=#d5e8d4;" vertex="1" parent="XLJOTzD1S34jmGUU4nhe-1">
+        <mxCell id="vz4CJ1ccR9rXMkQp4_nw-12" value="link" style="ellipse;whiteSpace=wrap;html=1;align=center;strokeColor=#82b366;verticalAlign=middle;fontFamily=Helvetica;fontSize=12;fillColor=#d5e8d4;" parent="XLJOTzD1S34jmGUU4nhe-1" vertex="1">
           <mxGeometry x="115" y="470" width="60" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="vz4CJ1ccR9rXMkQp4_nw-13" value="auth_name" style="ellipse;whiteSpace=wrap;html=1;align=center;strokeColor=#82b366;verticalAlign=middle;fontFamily=Helvetica;fontSize=12;fillColor=#d5e8d4;" vertex="1" parent="XLJOTzD1S34jmGUU4nhe-1">
+        <mxCell id="vz4CJ1ccR9rXMkQp4_nw-13" value="auth_name" style="ellipse;whiteSpace=wrap;html=1;align=center;strokeColor=#82b366;verticalAlign=middle;fontFamily=Helvetica;fontSize=12;fillColor=#d5e8d4;" parent="XLJOTzD1S34jmGUU4nhe-1" vertex="1">
           <mxGeometry x="310" y="430" width="60" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="vz4CJ1ccR9rXMkQp4_nw-14" value="auth_id" style="ellipse;whiteSpace=wrap;html=1;align=center;strokeColor=#82b366;verticalAlign=middle;fontFamily=Helvetica;fontSize=12;fillColor=#d5e8d4;" vertex="1" parent="XLJOTzD1S34jmGUU4nhe-1">
+        <mxCell id="vz4CJ1ccR9rXMkQp4_nw-14" value="auth_id" style="ellipse;whiteSpace=wrap;html=1;align=center;strokeColor=#82b366;verticalAlign=middle;fontFamily=Helvetica;fontSize=12;fillColor=#d5e8d4;" parent="XLJOTzD1S34jmGUU4nhe-1" vertex="1">
           <mxGeometry x="240" y="430" width="60" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="vz4CJ1ccR9rXMkQp4_nw-15" value="tag" style="ellipse;whiteSpace=wrap;html=1;align=center;strokeColor=#82b366;verticalAlign=middle;fontFamily=Helvetica;fontSize=12;fillColor=#d5e8d4;" vertex="1" parent="XLJOTzD1S34jmGUU4nhe-1">
+        <mxCell id="vz4CJ1ccR9rXMkQp4_nw-15" value="tag" style="ellipse;whiteSpace=wrap;html=1;align=center;strokeColor=#82b366;verticalAlign=middle;fontFamily=Helvetica;fontSize=12;fillColor=#d5e8d4;" parent="XLJOTzD1S34jmGUU4nhe-1" vertex="1">
           <mxGeometry x="595" y="430" width="60" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="vz4CJ1ccR9rXMkQp4_nw-16" value="tag_id" style="ellipse;whiteSpace=wrap;html=1;align=center;strokeColor=#82b366;verticalAlign=middle;fontFamily=Helvetica;fontSize=12;fillColor=#d5e8d4;" vertex="1" parent="XLJOTzD1S34jmGUU4nhe-1">
+        <mxCell id="vz4CJ1ccR9rXMkQp4_nw-16" value="tag_id" style="ellipse;whiteSpace=wrap;html=1;align=center;strokeColor=#82b366;verticalAlign=middle;fontFamily=Helvetica;fontSize=12;fillColor=#d5e8d4;" parent="XLJOTzD1S34jmGUU4nhe-1" vertex="1">
           <mxGeometry x="525" y="430" width="60" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="vz4CJ1ccR9rXMkQp4_nw-18" value="lat" style="ellipse;whiteSpace=wrap;html=1;align=center;strokeColor=#82b366;verticalAlign=middle;fontFamily=Helvetica;fontSize=12;fillColor=#d5e8d4;" vertex="1" parent="XLJOTzD1S34jmGUU4nhe-1">
+        <mxCell id="vz4CJ1ccR9rXMkQp4_nw-18" value="lat" style="ellipse;whiteSpace=wrap;html=1;align=center;strokeColor=#82b366;verticalAlign=middle;fontFamily=Helvetica;fontSize=12;fillColor=#d5e8d4;" parent="XLJOTzD1S34jmGUU4nhe-1" vertex="1">
           <mxGeometry x="690" y="430" width="60" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="vz4CJ1ccR9rXMkQp4_nw-20" value="long" style="ellipse;whiteSpace=wrap;html=1;align=center;strokeColor=#82b366;verticalAlign=middle;fontFamily=Helvetica;fontSize=12;fillColor=#d5e8d4;" vertex="1" parent="XLJOTzD1S34jmGUU4nhe-1">
+        <mxCell id="vz4CJ1ccR9rXMkQp4_nw-20" value="long" style="ellipse;whiteSpace=wrap;html=1;align=center;strokeColor=#82b366;verticalAlign=middle;fontFamily=Helvetica;fontSize=12;fillColor=#d5e8d4;" parent="XLJOTzD1S34jmGUU4nhe-1" vertex="1">
           <mxGeometry x="760" y="430" width="60" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="vz4CJ1ccR9rXMkQp4_nw-21" value="org_name" style="ellipse;whiteSpace=wrap;html=1;align=center;strokeColor=#82b366;verticalAlign=middle;fontFamily=Helvetica;fontSize=12;fillColor=#d5e8d4;" vertex="1" parent="XLJOTzD1S34jmGUU4nhe-1">
+        <mxCell id="vz4CJ1ccR9rXMkQp4_nw-21" value="org_name" style="ellipse;whiteSpace=wrap;html=1;align=center;strokeColor=#82b366;verticalAlign=middle;fontFamily=Helvetica;fontSize=12;fillColor=#d5e8d4;" parent="XLJOTzD1S34jmGUU4nhe-1" vertex="1">
           <mxGeometry x="310" y="490" width="60" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="vz4CJ1ccR9rXMkQp4_nw-22" value="org_id" style="ellipse;whiteSpace=wrap;html=1;align=center;strokeColor=#82b366;verticalAlign=middle;fontFamily=Helvetica;fontSize=12;fillColor=#d5e8d4;" vertex="1" parent="XLJOTzD1S34jmGUU4nhe-1">
+        <mxCell id="vz4CJ1ccR9rXMkQp4_nw-22" value="org_id" style="ellipse;whiteSpace=wrap;html=1;align=center;strokeColor=#82b366;verticalAlign=middle;fontFamily=Helvetica;fontSize=12;fillColor=#d5e8d4;" parent="XLJOTzD1S34jmGUU4nhe-1" vertex="1">
           <mxGeometry x="240" y="490" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="RSLvHCqCTaKb7Ed0MHkR-0" value="Text" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="XLJOTzD1S34jmGUU4nhe-1">
+          <mxGeometry x="935" y="498" width="50" height="30" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
