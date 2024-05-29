@@ -1,7 +1,0 @@
-Metadata-Version: 2.1
-Name: test_package
-Version: 0.1
-Summary: Access to PRIMRE knowledge hub metadata and content.
-Author: Dominick DeCanio
-Author-email: dominick.c.decanio@pnnl.gov
-Requires-Dist: pandas
