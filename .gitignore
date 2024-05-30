@@ -1,3 +1,11 @@
-code/test/.ipynb_checkpoints
-.ipynb_checkpoints
-resources/.$*
+# Old
+#code/test/.ipynb_checkpoints
+#.ipynb_checkpoints
+#resources/.$*
+
+# File Types
+*.$
+
+# Directories
+**/__pycache__/
+**/.ipynb_checkpoints
