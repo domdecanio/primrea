@@ -22,14 +22,16 @@ class primrea_data():
         #tethys_e_dataframe = api_to_df(tethys_e_api)
         
         # Initialize Tethys tables
-        self.tethys_dataframe = api_to_df(tethys_api)
-        self.tethys_authors = entry_based_table_gen.construct_authors_table(self.tethys_dataframe)
-        self.tethys_organizations = entry_based_table_gen.construct_organizations_table(self.tethys_dataframe)
-        self.tethys_tags = entry_based_table_gen.construct_tags_table(self.tethys_dataframe)
+        self.tethys_dataframe_raw = api_to_df(tethys_api)
+        self.tethys_core = entry_based_table_gen.construct_core_table(self.tethys_dataframe_raw)
+        self.tethys_authors = entry_based_table_gen.construct_authors_table(self.tethys_dataframe_raw)
+        self.tethys_organizations = entry_based_table_gen.construct_organizations_table(self.tethys_dataframe_raw)
+        self.tethys_tags = entry_based_table_gen.construct_tags_table(self.tethys_dataframe_raw)
 
         # Initialize Tethys Engineering tables
-        self.tethys_e_dataframe = api_to_df(tethys_e_api)
-        self.tethys_e_authors = entry_based_table_gen.construct_authors_table(self.tethys_e_dataframe)
-        self.tethys_e_organizations = entry_based_table_gen.construct_organizations_table(self.tethys_e_dataframe)
-        self.tethys_e_tags = entry_based_table_gen.construct_tags_table(self.tethys_e_dataframe)
+        self.tethys_e_dataframe_raw = api_to_df(tethys_e_api)
+        self.tethys_e_core = entry_based_table_gen.construct_core_table(self.tethys_e_dataframe_raw)
+        self.tethys_e_authors = entry_based_table_gen.construct_authors_table(self.tethys_e_dataframe_raw)
+        self.tethys_e_organizations = entry_based_table_gen.construct_organizations_table(self.tethys_e_dataframe_raw)
+        self.tethys_e_tags = entry_based_table_gen.construct_tags_table(self.tethys_e_dataframe_raw)
 

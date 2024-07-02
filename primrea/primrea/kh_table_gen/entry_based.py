@@ -16,6 +16,34 @@ def find_entry_id(entry_uri):
     return entry_id
 
 
+def construct_core_table(tethyss_df):
+    '''
+    This function creates a normalized table for the entity "entry." The primary key of the resulting table is
+    "entry_id," and it may be used to connect entries represented in this table to associated entities, such
+    as authors, organizations, or tags.
+    '''
+    # Constructing the entry_id data
+    tethyss_df_len = len(tethyss_df)
+    entry_ids = list()
+    for i in range(0, tethyss_df_len):
+        entry_id = find_entry_id(tethyss_df['URI'][i])
+        entry_ids.append(entry_id)
+
+    # Add entry_id column
+    tethyss_df['entry_id'] = entry_ids
+
+    # Correct datatype of the datetime columns
+    tethyss_df['originationDate2'] = pd.to_datetime(tethyss_df['originationDate'])
+    tethyss_df['modifiedDate2'] = pd.to_datetime(tethyss_df['modifiedDate'])
+
+    # Slice working df to final col list
+    tethyss_df_final = tethyss_df[['entry_id', 'originationDate2', 'modifiedDate2', 'URI', 'landingPage', 
+                                   'sourceURL', 'title', 'description', 'signatureProject']]
+    tethyss_df_final = tethyss_df_final.rename(columns={'originationDate2': 'originationDate', 'modifiedDate2': 'modifiedDate'})
+    
+    return tethyss_df_final
+    
+
 def construct_authors_table(mhkdr_dataframe):
     '''
     This function creates a normalized table for the json element "author," connected to an "entry_id" that 
@@ -47,7 +75,7 @@ def construct_authors_table(mhkdr_dataframe):
 def construct_organizations_table(mhkdr_dataframe):
     '''
     This function creates a normalized table for the json element "organization," connected to an "entry_id" that 
-    may be called as a primary k4ey to join this table to others. This disentangles the nested list structure
+    may be called as a primary key to join this table to others. This disentangles the nested list structure
     present in the json to enable reporting e.g. associations among organizations, number of documents 
     attributed to each organization.
     '''
