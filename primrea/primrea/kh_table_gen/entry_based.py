@@ -33,7 +33,7 @@ def construct_core_table(tethyss_df):
     tethyss_df['entry_id'] = entry_ids
 
     # Correct datatype of the datetime columns
-    tethyss_df['originationDate2'] = pd.to_datetime(tethyss_df['originationDate'])
+    tethyss_df['originationDate2'] = pd.to_datetime(tethyss_df['originationDate'], errors='coerce')
     tethyss_df['modifiedDate2'] = pd.to_datetime(tethyss_df['modifiedDate'])
 
     # Slice working df to final col list
