@@ -40,6 +40,7 @@ def construct_core_table(tethyss_df):
     tethyss_df_final = tethyss_df[['entry_id', 'originationDate2', 'modifiedDate2', 'URI', 'landingPage', 
                                    'sourceURL', 'title', 'description', 'signatureProject']]
     tethyss_df_final = tethyss_df_final.rename(columns={'originationDate2': 'originationDate', 'modifiedDate2': 'modifiedDate'})
+    tethyss_df_final = tethyss_df_final.drop_duplicates(subset='entry_id')
     
     return tethyss_df_final
     
