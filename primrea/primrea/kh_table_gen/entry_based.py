@@ -43,6 +43,39 @@ def construct_core_table(tethyss_df):
     tethyss_df_final = tethyss_df_final.drop_duplicates(subset='entry_id')
     
     return tethyss_df_final
+
+
+def construct_mhkdr_core_table(mhkdr_df_1, mhkdr_df_2):
+    '''
+    This function creates a normalized table for the entity "entry." The primary key of the resulting table is
+    "entry_id," and it may be used to connect entries represented in this table to associated entities, such
+    as authors, organizations, or tags.
+    '''
+    # Constructing the entry_id data
+    mhkdr_df_1_len = len(mhkdr_df_1)
+    entry_ids = list()
+    for i in range(0, mhkdr_df_1_len):
+        entry_id = find_entry_id(mhkdr_df_1['URI'][i])
+        entry_ids.append(entry_id)
+
+    # Add entry_id column
+    mhkdr_df_1['entry_id'] = entry_ids
+
+    # Correct datatype of the datetime columns
+    mhkdr_df_1['originationDate2'] = pd.to_datetime(mhkdr_df_1['originationDate'], errors='coerce')
+    mhkdr_df_1['modifiedDate2'] = pd.to_datetime(mhkdr_df_1['modifiedDate'])
+
+    # Slice working df to final col list
+    mhkdr_df_1_final = mhkdr_df_1[['entry_id', 'originationDate2', 'modifiedDate2', 'URI', 'landingPage', 
+                                   'sourceURL', 'title', 'description', 'signatureProject']]
+    mhkdr_df_1_final = mhkdr_df_1_final.rename(columns={'originationDate2': 'originationDate', 'modifiedDate2': 'modifiedDate'})
+    mhkdr_df_1_final = mhkdr_df_1_final.drop_duplicates(subset='entry_id')
+
+    # Additional work to integrate unqiue MHKDR data.
+    
+
+    
+    return mhkdr_df_final
     
 
 def construct_authors_table(mhkdr_dataframe):
