@@ -4,10 +4,17 @@ on: [push]
 jobs:
   build-and-publish:
     runs-on: ubuntu-latest
+    environment:
+      name: pypi
+      url: https://pypi.org/p/primrea
+    permissions:
+      id-token: write
     steps:
-      - uses: actions/checkout@v2
-      - uses: actions/setup-python@v2
+      uses: pypa/gh-action-pypi-publish@release/v1
 
-      - run: python -m pip install build --user
-      - run: python -m build --sdist --wheel --outdir primrea
+      # - uses: actions/checkout@v2
+      # - uses: actions/setup-python@v2
+
+      # - run: python -m pip install build --user
+      # - run: python -m build --sdist --wheel --outdir primrea/dist/ .
       
