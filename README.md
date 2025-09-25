@@ -9,3 +9,33 @@ The completed feature set includes a partial implementation of the database sche
 - development_notebooks : Contains python notebooks for the purposes of feature development for the package, and are retained here to aid future development
 - primrea : Package code
 - PRIMRE KHs tabular structure : Database diagrams
+
+## Installation
+
+PRIMRE-A can be installed from PyPi using pip:
+
+```bash
+pip install primrea
+```
+
+## Usage
+
+To access the database created by PRIMRE-A, one must first import the package core:
+
+```bash
+from primrea import core
+```
+
+and then initialize the database using:
+
+```bash
+primre_data = core.primrea_data
+```
+
+It is normal for this second line of code to take some time to execute, as the package is retrieving all content associated with the implemented PRIMRE knowledge hubs and transforming it into the cleaned tables.
+
+## Database Schema
+
+Below is the ER diagram corresponding to the full PRIMRE-A database schema. 
+
+![](full_ER.svg)

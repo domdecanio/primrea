@@ -12,7 +12,29 @@ def api_to_df(api_str):
     
 class primrea_data():
     '''
-    
+    Available Knowledge Hubs:
+       - tethys
+       - tethys_e
+
+    Available Tables:
+       - dataframe_raw
+       - core
+       - authors
+       - organizations
+       - tags
+
+    To access the desired table, call the appropriate method.
+    Example:
+        desired table -> tethys core table
+        code -> primre_data.tethys_core
+
+    Note:
+        "dataframe_raw" - This table is the result of simply 
+                          creating a pd.DataFrame from the API 
+                          contents.
+        "core" - This table corresponds to the "Entries" entity 
+                 in the ER diagram.
+        All other table names correspond directly to the ER diagram.
     '''
     def __init__(self):
         # Return raw pandas dataframes corresponding to api contents
