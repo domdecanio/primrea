@@ -20,6 +20,7 @@ pip install primrea
 
 ## Usage
 
+### Initialization
 To access the database created by PRIMRE-A, one must first import the package core:
 
 ```bash
@@ -29,10 +30,33 @@ from primrea import core
 and then initialize the database using:
 
 ```bash
-primre_data = core.primrea_data
+primre_data = core.primrea_data()
 ```
 
 It is normal for this second line of code to take some time to execute, as the package is retrieving all content associated with the implemented PRIMRE knowledge hubs and transforming it into the cleaned tables.
+
+### Accessing Tables
+
+Available Knowledge Hubs:
+    - tethys
+    - tethys_e
+
+Available Tables:
+    - dataframe_raw
+    - core
+    - authors
+    - organizations
+    - tags
+
+To access the desired table, call the appropriate method.
+Example:
+    desired table -> tethys core table
+    code -> primre_data.tethys_core
+
+Note:
+- "dataframe_raw" - This table is the result of simply creating a pd.DataFrame from the API contents.
+- "core" - This table corresponds to the "Entries" entity in the ER diagram.
+- All other table names correspond directly to the ER diagram.
 
 ## Database Schema
 
